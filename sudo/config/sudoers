@@ -1,0 +1,8 @@
+Defaults        env_reset
+Defaults        iolog_dir=/var/log/sudo-io/%{user}
+Defaults        mail_badpass
+Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+root    ALL=(ALL:ALL) ALL
+
+%sudo   ALL=(ALL:ALL) LOG_INPUT: LOG_OUTPUT: ALL
